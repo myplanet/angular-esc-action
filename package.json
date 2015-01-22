@@ -4,7 +4,7 @@
   "description": "Concise ESC key handler for Angular",
   "main": "angular-esc-action.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/karma/bin/karma start --single-run --browsers PhantomJS"
   },
   "repository": {
     "type": "git",
