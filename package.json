@@ -1,0 +1,22 @@
+{
+  "name": "angular-esc-action",
+  "version": "1.0.1",
+  "description": "Concise ESC key handler for Angular",
+  "main": "angular-esc-action.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/myplanetdigital/angular-esc-action.git"
+  },
+  "keywords": [
+    "angular",
+    "esc-key"
+  ],
+  "author": "Ates Goral <ates@magnetiq.com> (http://magnetiq.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/myplanetdigital/angular-esc-action/issues"
+  }
+}
