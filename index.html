@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta encoding="UTF-8" />
+    <title>angular-esc-action</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link rel="stylesheet" href="assets/fonts.css" />
+    <link rel="stylesheet" href="theme.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css" />
+    <style>
+    .showcase-example > div {
+        font-family: TradeGothic, sans-serif;
+        font-size: 150px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 300px;
+        color: #333;
+        cursor: pointer;
+    }
+    </style>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.9/angular.js"></script>
+    <script src="lib/angular-esc-action.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+
+        angular.module('demo', [ 'mp.escAction' ]);
+    </script>
+</head>
+<body>
+    <header>
+        <div class="content-wrap">
+            <a href="http://myplanet.io" class="logo" title="Myplanet">Myplanet</a>
+            <h1><a href=".">angular-esc-action</a></h1>
+            <h2>Escape Key Handler for Angular</h2>
+        </div>
+    </header>
+    <nav>
+        <div class="content-wrap">
+            <ul>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#download">Download <strong>v1.0.1</strong></a></li>
+                <li><a href="#usage">Usage</a></li>
+                <li><a href="https://github.com/myplanetdigital/angular-esc-action">View on <strong>GitHub</strong></a></li>
+            </ul>
+        </div>
+    </nav>
+    <article ng-app="demo">
+        <section class="showcase">
+            <div class="content-wrap">
+                <div class="showcase-example">
+                   <div tabindex="0"
+                        ng-init="count = 0"
+                        ng-bind="count"
+                        esc-action="count = count + 1">
+                    </div> 
+                </div>
+                <div class="showcase-content">
+                    <h3>Live Demo</h3>
+
+                    <p>Click inside the element to give it focus and then hit the escape key.</p>
+
+                    <h4>Demo Source</h4>
+
+                    <pre><code class="lang-html"><!--
+-->&lt;div tabindex=&quot;0&quot;
+     ng-init=&quot;count = 0&quot;
+     ng-bind=&quot;count&quot;
+     esc-action=&quot;count = count + 1&quot;&gt;
+&lt;/div&gt;<!--
+                    --></code></pre>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="content-wrap">
+                <h3 id="overview">Overview</h3>
+
+                <p><strong>angular-esc-action</strong> allows you to attach an escape key handler to an element without having to locate the element within the DOM.</p>
+            </div>
+        </section>
+        <section>
+            <div class="content-wrap">
+                <h3 id="download">Download</h3>
+
+                <p>Grab the latest from <a href="https://github.com/myplanetdigital/angular-esc-action/releases">GitHub</a> or use your favorite package manager:</p>
+
+                <h4>Via Bower</h4>
+
+                <pre><code class="lang-sh">bower install angular-esc-action</code></pre>
+
+                <h4>Via NPM</h4>
+
+                <pre><code class="lang-sh">npm install angular-esc-action</code></pre>
+
+                <h3 id="usage">Usage</h3>
+
+                <p>Include <strong>angular-esc-action.js</strong> in your application,
+                    after Angular is included.</p>
+
+                <pre><code class="lang-html"><!--
+-->&lt;script src=&quot;path/to/angular.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;path/to/angular-esc-action.js&quot;&gt;&lt;/script&gt;<!--
+                --></code></pre>
+
+                <p>You may use an AMD or CommonJS loader as well.</p>
+
+                <p>Initialize your Angular application with the <strong>mp.escAction</strong> module as a dependency:</p>
+
+                <pre><code class="lang-js"><!--
+-->angular.module('app', [ 'mp.escAction' ]);<!--
+                --></code></pre>
+
+                <p>Then use the <code>esc-action</code> attribute to specify an expression to evaluate when the escape key is pressed:</p>
+
+                <pre><code class="lang-html"><!--
+-->&lt;div class=&quot;dialog&quot; tabindex=&quot;0&quot; esc-action=&quot;closeDialog()&quot;&gt;
+&lt;/div&gt;<!--
+                --></code></pre>
+
+                <p>Make sure that the element or a parent element is focusable by providing a <code>tabindex</code>. The escape key press will only be captured while the element (or a parent) has focus.</p>
+            </div>
+        </section>
+    </article>
+    <footer>
+        <div class="content-wrap">
+            Made with <span class="love" title="love">love</span> by
+            <a href="https://github.com/d9su">Rex</a>
+            from
+            <a href="http://myplanet.io/">Myplanet</a>.
+        </div>
+    </footer>
+</body>
+</html>
