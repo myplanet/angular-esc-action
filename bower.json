@@ -4,7 +4,7 @@
   "version": "1.0.2",
   "homepage": "https://github.com/myplanetdigital/angular-esc-action",
   "authors": [
-    "Rex Su <rex.s@myplanetdigital.com>"
+    "Rex Su <rex.s@myplanet.com>"
   ],
   "description": "Concise ESC key handler for Angular",
   "moduleType": [

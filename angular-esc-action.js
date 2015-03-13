@@ -25,8 +25,7 @@
                     var escExpr = $attr.escAction;
 
                     element.bind('keyup', function (event) {
-                        // if pressed ESC
-                        if (event.which === 27) {
+                        if (event.which === 27) { // Esc
                             $scope.$apply(function () {
                                 $scope.$eval(escExpr);
                             });
