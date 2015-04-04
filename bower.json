@@ -1,7 +1,7 @@
 {
   "name": "angular-esc-action",
   "main": "angular-esc-action.js",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "homepage": "https://github.com/myplanet/angular-esc-action",
   "authors": [
     "Rex Su <rex.s@myplanet.com>",
