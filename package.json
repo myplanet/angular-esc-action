@@ -1,6 +1,6 @@
 {
   "name": "angular-esc-action",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "description": "Escape key handler for Angular",
   "main": "angular-esc-action.js",
   "scripts": {
